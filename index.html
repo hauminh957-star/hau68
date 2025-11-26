@@ -1,36 +1,156 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Nguyễn Minh Hậu</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nguyễn Minh Hậu — Nhân viên kinh doanh</title>
+  <meta name="description" content="Nguyễn Minh Hậu - Nhân viên kinh doanh dược mỹ phẩm. Phát triển khách hàng spa/clinic, B2B, tổ chức event." />
+  <meta name="author" content="Nguyễn Minh Hậu" />
+  <meta property="og:title" content="Nguyễn Minh Hậu — Nhân viên kinh doanh" />
+  <meta property="og:description" content="Kinh nghiệm dược mỹ phẩm, B2B, phát triển khách hàng spa/clinic." />
+  <!-- TODO: thay og:image nếu có ảnh đại diện -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Nguyễn Minh Hậu</h1>
-        <p>Front-End Developer</p>
-    </header>
-
-    <section class="about">
-        <h2>Giới thiệu</h2>
-        <p> Mình là Hậu — người năng động, sáng tạo và thích kết nối. Có kinh nghiệm tư vấn sản phẩm dược mỹ phẩm,
-          xây dựng mạng lưới khách hàng cho spa/clinic và xử lý quy trình bán hàng B2B. Mục tiêu: phát triển sự
-          nghiệp sales, chốt hợp đồng lớn và đồng hành cùng thương hiệu tăng trưởng..</p>
-    </section>
-
-    <section class="works">
-        <h2>Các sản phẩm tôi từng bán</h2>
-           <div class="projects">
-<img src="images/imageswork1.jpg" alt="My Work 1">
-<img src="images/imageswork2.jpg" alt="My Work 2">
-</div>
-
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-left">
+          <h1 class="name">Nguyễn Minh Hậu</h1>
+          <p class="role">Nhân viên kinh doanh • Dược mỹ phẩm & B2B</p>
         </div>
+        <nav class="header-right">
+          <!-- bạn có thể xóa các nút không cần -->
+          <a href="#about" class="nav-link">Giới thiệu</a>
+          <a href="#work" class="nav-link">Kinh nghiệm</a>
+          <a href="#contact" class="nav-link">Liên hệ</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main">
+    <!-- HERO / Short intro -->
+    <section class="hero card">
+      <h2 class="hero-title">Xin chào — Mình là Hậu</h2>
+      <p class="hero-sub">Nhân viên kinh doanh chuyên phát triển kênh spa/clinic, tư vấn dược mỹ phẩm B2B và hỗ trợ tăng trưởng doanh thu.</p>
+      <p class="hero-cta">Bạn có thể gọi: <a href="tel:0392298863">0392 298 863</a> • Email: <a href="mailto:haum20440@gmail.com">haum20440@gmail.com</a></p>
     </section>
 
-    <footer>
-        <p>© 2024 - Nguyễn Minh Hậu</p>
-    </footer>
+    <!-- ABOUT -->
+    <section id="about" class="card about">
+      <h3>Giới thiệu</h3>
+      <p>
+        <!-- TODO: Thay mô tả ngắn của bạn -->
+        Mình là Hậu — năng động, thích kết nối và có kinh nghiệm làm việc trong ngành thời trang & dược mỹ phẩm. Tập trung vào phát triển khách hàng B2B (spa/clinic), tổ chức event và quản lý kênh bán hàng.
+      </p>
+
+      <div class="about-grid">
+        <div>
+          <h4>Thông tin liên hệ</h4>
+          <ul class="info-list">
+            <li><strong>SĐT:</strong> <a href="tel:0392298863">0392 298 863</a></li>
+            <li><strong>Email:</strong> <a href="mailto:haum20440@gmail.com">haum20440@gmail.com</a></li>
+            <li><strong>Địa chỉ:</strong> Hà Nội</li>
+            <li><strong>Sinh ngày:</strong> 06/12/2002</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Kỹ năng chính</h4>
+          <ul class="skill-list">
+            <li>Giao tiếp & Thuyết phục</li>
+            <li>Phát triển khách hàng B2B</li>
+            <li>Quản lý đơn hàng & công nợ</li>
+            <li>Phân tích thị trường</li>
+            <li>Tin học văn phòng</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK / EXPERIENCE -->
+    <section id="work" class="card work">
+      <h3>Kinh nghiệm làm việc</h3>
+
+      <article class="exp">
+        <img src="biomeek.png" alt="Biomeek" class="exp-logo">
+        <div class="exp-body">
+          <h4>Nhân viên kinh doanh — YUIL GROUP</h4>
+          <p class="muted">04/2024 – Hiện nay • Dược mỹ phẩm</p>
+          <ul>
+            <li>Tư vấn & demo sản phẩm cho spa/clinic.</li>
+            <li>Xây dựng mạng lưới khách hàng.</li>
+            <li>Đề xuất chiến lược tăng trưởng doanh số.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="exp">
+        <img src="anta.png" alt="ANTA / An Việt Sông Hồng" class="exp-logo">
+        <div class="exp-body">
+          <h4>Chuyên viên kiểm soát nội bộ — An Việt Sông Hồng</h4>
+          <p class="muted">07/2022 – 03/2024</p>
+          <ul>
+            <li>Kiểm soát quy trình, phát hiện sai phạm.</li>
+            <li>Báo cáo và đề xuất giải pháp giảm thiểu rủi ro.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Gallery công việc -->
+      <div class="project-gallery">
+        <h4>Hình ảnh hoạt động</h4>
+        <div class="gallery-grid">
+          <!-- TODO: Thay ảnh / thêm bớt - ảnh phải nằm trong folder images/ nếu bạn đặt vậy -->
+          <img src="images/imageswork1.jpg" alt="Hoạt động 1">
+          <img src="images/imageswork2.jpg" alt="Hoạt động 2">
+        </div>
+        <p class="muted small">Ghi chú: thay ảnh bằng ảnh thực tế của bạn trong thư mục images/</p>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="card achievements">
+      <h3>Thành tích & Dự án</h3>
+      <ul class="achieve-list">
+        <li>Hoàn thành chỉ tiêu doanh số quý/năm</li>
+        <li>Tổ chức event ra mắt sản phẩm, thu hút hàng trăm khách</li>
+        <li>Quản lý kênh bán hàng & quy trình đơn hàng</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card contact">
+      <h3>Liên hệ</h3>
+      <p>Nếu bạn muốn hợp tác hoặc cần hỗ trợ, liên hệ mình theo thông tin bên dưới hoặc gửi tin nhắn qua form.</p>
+
+      <div class="contact-actions">
+        <a class="btn call" href="tel:0392298863">Gọi: 0392 298 863</a>
+        <a class="btn zalo" href="https://zalo.me/0392298863" target="_blank" rel="noreferrer">Zalo</a>
+        <a class="btn mail" href="mailto:haum20440@gmail.com">Email</a>
+      </div>
+
+      <form class="contact-form" action="#" onsubmit="alert('Demo: Form không gửi thực tế'); return false;">
+        <input type="text" name="name" placeholder="Tên của bạn" />
+        <input type="text" name="contact" placeholder="Email hoặc SĐT" />
+        <textarea name="message" rows="4" placeholder="Tin nhắn..."></textarea>
+        <button type="submit" class="btn submit">Gửi</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 Nguyễn Minh Hậu — Portfolio</small>
+    </div>
+  </footer>
+
+  <!-- Minimal JS: (chỉ dùng cho hành vi đơn giản) -->
+  <script>
+    // no animations as requested
+  </script>
 </body>
 </html>
